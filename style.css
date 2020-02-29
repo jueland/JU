@@ -36,23 +36,25 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-.column {
-    padding: 5rem;
-    color: white;
-    float: left;
-    width: 45%;
+
+.cv-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 5rem;
+    color: #d7d4ed;
+    padding-top: 3rem;
 }
-.column2 {
+.cv-grid-item{
+    height: 40rem;
     padding: 5rem;
-    color: white;
-    float: left;
-    width: 25%;
-}
-.column3 {
-    padding: 5rem;
-    color: white;
-    float: left;
-    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 2rem;
+    z-index: 1;
+    
 }
 
   /* Clear floats after the columns */
